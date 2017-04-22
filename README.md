@@ -32,7 +32,7 @@ You use this repo by reading the introduction in the Readme.md file and solving 
 
 #### Credit
 
-	##### Codebag Team
+##### Codebag Team
 
 #### Compensate Us
 
