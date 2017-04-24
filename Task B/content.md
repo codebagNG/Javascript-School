@@ -14,11 +14,13 @@ run by the client's browser. Here are some tips to remember when writing
 ## The SCRIPT Tag
 
 
-The <SCRIPT> tag alerts a browser that JavaScript code follows. It is typically embedded in the HTML.
+The ```<SCRIPT>``` tag alerts a browser that JavaScript code follows. It is typically embedded in the HTML.
+```
 <SCRIPT language = "JavaScript">
+```
 statements
 
-SCRIPT Example
+### SCRIPT Example
 * Open "script_tag.html" in a browser.
 * View the Source
 * Put the cursor after
