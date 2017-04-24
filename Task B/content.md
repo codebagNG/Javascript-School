@@ -14,8 +14,7 @@ run by the client's browser. Here are some tips to remember when writing
 ## The SCRIPT Tag
 
 
-The <SCRIPT> tag alerts a browser that JavaScript code follows. It is
-typically embedded in the HTML.
+The <SCRIPT> tag alerts a browser that JavaScript code follows. It is typically embedded in the HTML.
 <SCRIPT language = "JavaScript">
 statements
 
@@ -24,12 +23,11 @@ SCRIPT Example
 * View the Source
 * Put the cursor after
 
-shell 
-</SCRIPT>
+```</SCRIPT>
 <! – Enter code below 􀃆 and enter the following:
 <SCRIPT language = "JavaScript">
 alert("Welcome to the script tag test page.")
-</SCRIPT>
+</SCRIPT>```
 
 * Save the changes by choosing Save from the File menu.
 * Then Refresh the browser by clicking the Refresh or Reload button.
@@ -49,12 +47,12 @@ from an external text file. This is useful if you have a lot of code or you
 want to run it from several pages, because any number of pages can call the
 same external JavaScript file. The text file itself contains no HTML tags. It
 is call by the following tag:
-shell <SCRIPT SRC="filename.js">   </SCRIPT>
+```<SCRIPT SRC="filename.js">   </SCRIPT>```
 
 #### External Example
 * Open "external.html" in a browser
 * View the Source
 * Put the cursor after <! – Enter code here 􀃆 and enter:
-shell <SCRIPT language = "JavaScript" SRC = "external.js"> </SCRIPT>
+```<SCRIPT language = "JavaScript" SRC = "external.js"> </SCRIPT>```
 
 #### Save the changes and Refresh the browser.
