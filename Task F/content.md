@@ -13,11 +13,14 @@ You can use the methods of the document object to work on a Web page. Here are t
 
 * Keep the "userdefined.html" file open
 * Put the cursor after the String example and enter:
-```document.write(myNum)
+
+```
+document.write(myNum)
 document.write(theYear)
 document.write(printString)
 document.write(numChars)
-</SCRIPT>```
+</SCRIPT>
+```
 #### Save the changes and Refresh the page
 
 ### Formatting What is Written
@@ -26,15 +29,20 @@ You will notice that the results of all four variable are printed on one line an
 ### Document Formatting Example
 * Open a html file and View the Source
 * Put the cursor after "<! – enter function 􀃆" and enter:
-```<SCRIPT language="JavaScript">
+```
+<SCRIPT language="JavaScript">
 function newPage() {
 var userName = prompt("Please enter your name:", "")
 document.write("<H1>Welcome " + userName + "</H1><BR>")
 document.write("<H2>to your new home page.</H2>")
 }
-</SCRIPT>```
+</SCRIPT>
+```
+
 * Put the cursor after "<! – enter the link here 􀃆" and enter:
-```<A HREF="JavaScript:newPage()">Create-a-Page!</A>```
+```
+<A HREF="JavaScript:newPage()">Create-a-Page!</A>
+```
 #### Save the changes and Refresh the page
 
 ### Document Properties
@@ -51,7 +59,9 @@ Use the properties of the document object to set the colors of the page, the tit
 
 * Keep the html file open
 * Put the cursor after the last "document.write" and enter:
-```document.bgColor="red"```
+```
+document.bgColor="red"
+```
 #### Save the changes and Refresh the page
 
 ### Window Object
@@ -74,11 +84,13 @@ The following are the main window methods. They are:
 ### Window Example
 * Open the html  file and View the Source
 * Put the cursor after "<! – Enter the function here 􀃆" and enter:
-```<SCRIPT language = "JavaScript">
+```
+<SCRIPT language = "JavaScript">
 function openWin() {
 window.open("windowtoo.html")
 }
-</SCRIPT>```
+</SCRIPT>
+```
 * Put the cursor after "<!—Add link here 􀃆" and enter:
 ```<A HREF="JavaScript:openWin()">New Window!</A>```
 #### Save the changes and Refresh the page
@@ -98,6 +110,8 @@ By default, if you do not specify any features, then a window will have all of t
 ### Window Attributes Example
 * With the created html file open, View the Source
 * Put the cursor on the line "window.open " and edit it to:
-```window.open("windowtoo.html", "newWindow",
-"height=200,width=200,")```
+```
+window.open("windowtoo.html", "newWindow",
+"height=200,width=200,")
+```
 #### Save the changes and Refresh the page

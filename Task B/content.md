@@ -23,11 +23,13 @@ SCRIPT Example
 * View the Source
 * Put the cursor after
 
-```</SCRIPT>
+```
+</SCRIPT>
 <! – Enter code below 􀃆 and enter the following:
 <SCRIPT language = "JavaScript">
 alert("Welcome to the script tag test page.")
-</SCRIPT>```
+</SCRIPT>
+```
 
 * Save the changes by choosing Save from the File menu.
 * Then Refresh the browser by clicking the Refresh or Reload button.
@@ -47,12 +49,17 @@ from an external text file. This is useful if you have a lot of code or you
 want to run it from several pages, because any number of pages can call the
 same external JavaScript file. The text file itself contains no HTML tags. It
 is call by the following tag:
-```<SCRIPT SRC="filename.js">   </SCRIPT>```
+```
+<SCRIPT SRC="filename.js">   </SCRIPT>
+```
 
 #### External Example
 * Open "external.html" in a browser
 * View the Source
 * Put the cursor after <! – Enter code here 􀃆 and enter:
-```<SCRIPT language = "JavaScript" SRC = "external.js"> </SCRIPT>```
+
+```
+<SCRIPT language = "JavaScript" SRC = "external.js"> </SCRIPT>
+```
 
 #### Save the changes and Refresh the browser.

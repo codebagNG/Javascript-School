@@ -24,6 +24,7 @@ var userName
 7
 * To assign values to variables, add an equal sign and the value:
 
-shell
+```
 var userName = "Smith"
 var price = 100
+```

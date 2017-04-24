@@ -20,4 +20,6 @@ objectName
 objectName.propertyName
 * To refer to a method of an object use:
 
-```objectName.methodName()```
+```
+objectName.methodName()
+```
