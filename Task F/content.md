@@ -1,20 +1,30 @@
 #Objects And Arrays
 
 ## Arrays
-Arrays are zero-indexed lists of values. They are a handy way to store a set of related items of the same type (such as strings), though in reality, an array can include multiple types of items, including other arrays.
+Arrays are zero-indexed lists of values. These means they are a collection of the same types of data eg. string. but then there can also be collection of arrays in a single array.
 
-### A simple array
+### A simple array example
 ```
-var m y A r r a y = [ ’ hello ’ , ’ world ’ ];
-Accessing array items by index
-var m y A r r a y = [ ’ hello ’ , ’ world ’ , ’ foo ’ , ’ bar ’ ];
-c o n s o l e . log ( m y A r r a y [ 3 ] ) ; // logs ’ bar ’
-Testing the size of an array
-var m y A r r a y = [ ’ hello ’ , ’ world ’ ];
-c o n s o l e . log ( m y A r r a y . l e n g t h ); // logs 2
-Changing the value of an array item
-var m y A r r a y = [ ’ hello ’ , ’ world ’ ];
-m y A r r a y [1] = ’ changed ’;
+var ArrayExample = [ "hello", "Nigeria" ];
+```
+
+### Accessing array items by index
+```
+var Array2 = [ 'hello' , 'world' , 'foo' , 'bar' ];
+console.log( Array2[ 3 ] ) ; // logs ’ bar ’
+```
+
+### Testing the size of an array
+
+```
+var myarray = [ 'hello', 'surulere' ];
+console( myarray.lenght ); // logs 2
+```
+### Changing the value of an array item
+```
+var anotherarray = [ "hello", "mushin" ];
+anotherarray[1] = 'yaba';
+console.log(anotherarray[1]) //logs yaba
 ```
 
 While it’s possible to change the value of an array item as shown in “Changing the value of an array item”, it’s generally not advised.
@@ -22,42 +32,47 @@ While it’s possible to change the value of an array item as shown in “Changi
 ### Adding elements to an array
 
 ```
-var m y A r r a y = [ ’ hello ’ , ’ world ’ ];
-m y A r r a y . push ( ’ new ’);
-Working with arrays
-var m y A r r a y = [ ’h ’ , ’e ’ , ’l ’ , ’l ’ , ’o ’ ];
-var m y S t r i n g = m y A r r a y . join ( ’ ’); // ’ hello ’
-var m y S p l i t = m y S t r i n g . s p l i t ( ’ ’); // [ ’h ’ , ’e ’ , ’l ’ , ’l ’ , ’o ’ ]
+var myarray= [ "hello" , "lasu" ];
+myarray.push ( "unilag" );
+console.log(myarray[2]); //logs unilag
+```
+
+#### Working with arrays
+var myarray= [ 'l', 'a', 'm', 'i', 'd', 'i' ];
+var mystring = myarray.join(''); // logs  'lamidi'
+
+var mysplit = mystring.split(""); // logs  [ 'l', 'a', 'm', 'i', 'd', 'i' ]
 ```
 
 #Objects
 
 Objects contain one or more key-value pairs. The key portion can be any string. The value portion can be any type of value: a number, a string, an array, a function, or even another object.
-[Definition: When one of these values is a function, it’s called a method of the object.] Otherwise, they are called properties.
+[**Definition**: When one of these values is a function, it’s called a method of the object.] Otherwise, they are called properties.
 
-As it turns out, nearly everything in JavaScript is an object — arrays, functions, numbers, even strings —
-and they all have properties and methods.
+Almost everything in JavaScript is an object — arrays, functions, numbers, even strings. And they all have properties and methods.
 
-###Creating an “object literal”
+### Creating an “object literal”
 
 ```
-var m y O b j e c t = {
-s a y H e l l o : f u n c t i o n () {
-c o n s o l e . log ( ’ hello ’);
+var myObject = {
+ greeting : function() {
+console.log ( "ekaro, otutuoman, inakwana");
 } ,
-m y N a m e : ’ Rebecca ’
+
+name : 'chinedu'
 };
-m y O b j e c t . s a y H e l l o (); // logs ’ hello ’
-c o n s o l e . log ( m y O b j e c t . m y N a m e ); // logs ’ Rebecca ’
+
+myobject.greeting(); // logs 'ekaro, otutuoma, inakwana'
+console.log( myobject.name ); // logs 'chinedu'
 ```
 
 Note When creating object literals, you should note that the key portion of each key-value pair can be written as any valid JavaScript identifier, a string (wrapped in quotes) or a number:
 
 ```
 var m y O b j e c t = {
-v a l i d I d e n t i f i e r : 123 ,
-’ some string ’: 456 ,
-9 9 9 9 9 : 789
+validIdentifier : 123 ,
+'somestring': 456 ,
+ 99999 : 789
 };
 ```
-Object literals can be extremely useful for code organization.
+### Object literals are tottally extremely useful for code organization.

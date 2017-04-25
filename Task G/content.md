@@ -11,10 +11,11 @@ You can use the methods of the document object to work on a Web page. Here are t
 
 ### Document Example
 
-* Keep the "userdefined.html" file open
-* Put the cursor after the String example and enter:
+* open a html file
+* and enter
 
 ```
+<SCRIPT>
 document.write(myNum)
 document.write(theYear)
 document.write(printString)
@@ -24,11 +25,13 @@ document.write(numChars)
 #### Save the changes and Refresh the page
 
 ### Formatting What is Written
+
 You will notice that the results of all four variable are printed on one line and without any spaces between the results. You can avoid this by including some formatting in your "document.write" statement.
 
 ### Document Formatting Example
+
 * Open a html file and View the Source
-* Put the cursor after "<! – enter function 􀃆" and enter:
+* and enter:
 ```
 <SCRIPT language="JavaScript">
 function newPage() {
@@ -39,7 +42,7 @@ document.write("<H2>to your new home page.</H2>")
 </SCRIPT>
 ```
 
-* Put the cursor after "<! – enter the link here 􀃆" and enter:
+* after which enter:
 ```
 <A HREF="JavaScript:newPage()">Create-a-Page!</A>
 ```
@@ -107,7 +110,9 @@ By default, if you do not specify any features, then a window will have all of t
 * status
 * location
 * directories
+
 ### Window Attributes Example
+
 * With the created html file open, View the Source
 * Put the cursor on the line "window.open " and edit it to:
 ```
