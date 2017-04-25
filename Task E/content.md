@@ -11,7 +11,7 @@ c o n s o l e . log ( ’ try ’ + i );
 Note that in Loops even though we use the keyword var before the variable name i, this does not “scope” the variable
 i to the loop block.
 
-###The for loop
+### The for loop
 
 A for loop is made up of four statements and has the following structure:
 
@@ -33,7 +33,7 @@ c o n s o l e . log ( ’ C u r r e n t l y at ’ + i );
 }
 ```
 
-###The while loop
+### The while loop
 
 A while loop is similar to an if statement, except that its body will keep executing until the condition
 evaluates to false.
