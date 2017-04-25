@@ -1,117 +1,63 @@
-# Document Object
+#Objects And Arrays
 
-The Document object represents the Web page that is loaded in the browser window, and the content displayed on that page, including text and form elements.
+## Arrays
+Arrays are zero-indexed lists of values. They are a handy way to store a set of related items of the same type (such as strings), though in reality, an array can include multiple types of items, including other arrays.
 
-### Document Methods
-
-You can use the methods of the document object to work on a Web page. Here are the most common document methods:
-* write() - write a string to the Web page
-* open() - opens a new document
-* close() - closes the document
-
-### Document Example
-
-* Keep the "userdefined.html" file open
-* Put the cursor after the String example and enter:
-
+### A simple array
 ```
-document.write(myNum)
-document.write(theYear)
-document.write(printString)
-document.write(numChars)
-</SCRIPT>
-```
-#### Save the changes and Refresh the page
-
-### Formatting What is Written
-You will notice that the results of all four variable are printed on one line and without any spaces between the results. You can avoid this by including some formatting in your "document.write" statement.
-
-### Document Formatting Example
-* Open a html file and View the Source
-* Put the cursor after "<! – enter function 􀃆" and enter:
-```
-<SCRIPT language="JavaScript">
-function newPage() {
-var userName = prompt("Please enter your name:", "")
-document.write("<H1>Welcome " + userName + "</H1><BR>")
-document.write("<H2>to your new home page.</H2>")
-}
-</SCRIPT>
+var m y A r r a y = [ ’ hello ’ , ’ world ’ ];
+Accessing array items by index
+var m y A r r a y = [ ’ hello ’ , ’ world ’ , ’ foo ’ , ’ bar ’ ];
+c o n s o l e . log ( m y A r r a y [ 3 ] ) ; // logs ’ bar ’
+Testing the size of an array
+var m y A r r a y = [ ’ hello ’ , ’ world ’ ];
+c o n s o l e . log ( m y A r r a y . l e n g t h ); // logs 2
+Changing the value of an array item
+var m y A r r a y = [ ’ hello ’ , ’ world ’ ];
+m y A r r a y [1] = ’ changed ’;
 ```
 
-* Put the cursor after "<! – enter the link here 􀃆" and enter:
+While it’s possible to change the value of an array item as shown in “Changing the value of an array item”, it’s generally not advised.
+
+### Adding elements to an array
+
 ```
-<A HREF="JavaScript:newPage()">Create-a-Page!</A>
+var m y A r r a y = [ ’ hello ’ , ’ world ’ ];
+m y A r r a y . push ( ’ new ’);
+Working with arrays
+var m y A r r a y = [ ’h ’ , ’e ’ , ’l ’ , ’l ’ , ’o ’ ];
+var m y S t r i n g = m y A r r a y . join ( ’ ’); // ’ hello ’
+var m y S p l i t = m y S t r i n g . s p l i t ( ’ ’); // [ ’h ’ , ’e ’ , ’l ’ , ’l ’ , ’o ’ ]
 ```
-#### Save the changes and Refresh the page
 
-### Document Properties
+#Objects
 
-Use the properties of the document object to set the colors of the page, the title and display the date the document was last modified. JavaScript has about 150 defined color words you can use or you can provide the hexidecimal RGB codes. Here are the most common document properties:
-* bgColor
-* fgColor
-* linkColor
-* vlinkColor
-* title
-* lastModified
+Objects contain one or more key-value pairs. The key portion can be any string. The value portion can be any type of value: a number, a string, an array, a function, or even another object.
+[Definition: When one of these values is a function, it’s called a method of the object.] Otherwise, they are called properties.
 
-### Document Example
+As it turns out, nearly everything in JavaScript is an object — arrays, functions, numbers, even strings —
+and they all have properties and methods.
 
-* Keep the html file open
-* Put the cursor after the last "document.write" and enter:
+###Creating an “object literal”
+
 ```
-document.bgColor="red"
+var m y O b j e c t = {
+s a y H e l l o : f u n c t i o n () {
+c o n s o l e . log ( ’ hello ’);
+} ,
+m y N a m e : ’ Rebecca ’
+};
+m y O b j e c t . s a y H e l l o (); // logs ’ hello ’
+c o n s o l e . log ( m y O b j e c t . m y N a m e ); // logs ’ Rebecca ’
 ```
-#### Save the changes and Refresh the page
 
-### Window Object
+Note When creating object literals, you should note that the key portion of each key-value pair can be written as any valid JavaScript identifier, a string (wrapped in quotes) or a number:
 
-The window object represents the browser window. You can use it to open a Web page in a new window and to set the attributes for the window. There are only two main window properties. They are:
-* status - set the status bar message
-* self - stores the name mof the current window
-
-### Window Methods
-
-The window methods are mainly for opening and closing new windows.
-The following are the main window methods. They are:
-* alert() - to display a message box
-* confirm() - to display a confirmation box
-* prompt() - to display a prompt box
-* open() - to open a new window
-* close() - to close a window
-
-
-### Window Example
-* Open the html  file and View the Source
-* Put the cursor after "<! – Enter the function here 􀃆" and enter:
 ```
-<SCRIPT language = "JavaScript">
-function openWin() {
-window.open("windowtoo.html")
-}
-</SCRIPT>
+var m y O b j e c t = {
+v a l i d I d e n t i f i e r : 123 ,
+’ some string ’: 456 ,
+9 9 9 9 9 : 789
+};
 ```
-* Put the cursor after "<!—Add link here 􀃆" and enter:
-```<A HREF="JavaScript:openWin()">New Window!</A>```
-#### Save the changes and Refresh the page
-
-### Window Attributes
-
-If the default new window does not suit your needs, you can specify different features of the window when you open it. The complete syntax of the "window.open" is as follow:
-window.open(URL, windowName, featureList)
-By default, if you do not specify any features, then a window will have all of them. If you specify any one feature, then the window will have only those you set equal to 1. The following are the window attributes:
-* toolbar
-* menubar
-* scrollbars
-* resizeable
-* status
-* location
-* directories
-### Window Attributes Example
-* With the created html file open, View the Source
-* Put the cursor on the line "window.open " and edit it to:
-```
-window.open("windowtoo.html", "newWindow",
-"height=200,width=200,")
-```
-#### Save the changes and Refresh the page
+Object literals can be extremely useful for code organization.
